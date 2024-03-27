@@ -1,0 +1,21 @@
+{
+  "name": "serena-dark",
+  "displayName": "Serena Dark",
+  "description": "Dark Theme",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Serena Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Serena Dark-color-theme.json"
+      }
+    ]
+  }
+}
