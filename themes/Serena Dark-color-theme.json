@@ -1,10 +1,10 @@
 {
 	"name": "Serena Dark",
 	"colors": {
-		"editor.background": "#263238",
-		"editor.foreground": "#eeffff",
-		"activityBarBadge.background": "#007acc",
-		"sideBarTitle.foreground": "#bbbbbb"
+		"editor.background": "#181f27",
+		"editor.foreground": "#fddfde",
+		"activityBarBadge.background": "#ffa345",
+		"sideBarTitle.foreground": "#ffefe0"
 	},
 	"tokenColors": [
 		{
@@ -15,17 +15,19 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#546E7A"
+				"foreground": "#504747"
 			}
 		},
 		{
 			"name": "Variables",
 			"scope": [
 				"variable",
+				"entity.name.variable",
 				"string constant.other.placeholder"
 			],
 			"settings": {
-				"foreground": "#EEFFFF"
+				"foreground": "#ffe0c1",
+				"fontStyle": ""
 			}
 		},
 		{
@@ -34,7 +36,7 @@
 				"constant.other.color"
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#e100ff" // IDK
 			}
 		},
 		{
@@ -44,24 +46,34 @@
 				"invalid.illegal"
 			],
 			"settings": {
-				"foreground": "#FF5370"
+				"foreground": "#e100ff" // IDK
 			}
 		},
 		{
-			"name": "Keyword, Storage",
+			"name": "Keyword Type, Storage",
 			"scope": [
 				"keyword",
 				"storage.type",
 				"storage.modifier"
 			],
 			"settings": {
-				"foreground": "#C792EA"
+				"foreground": "#d68121",
+				"fontStyle": "italic bold"
+			}
+		},
+		{
+			"name": "Keyword Control",
+			"scope": [
+				"keyword.control"
+			],
+			"settings": {
+				"foreground": "#f19739",
+				"fontStyle": ""
 			}
 		},
 		{
 			"name": "Operator, Misc",
 			"scope": [
-				"keyword.control",
 				"constant.other.color",
 				"punctuation",
 				"meta.tag",
@@ -75,7 +87,7 @@
 				"keyword.other.substitution"
 			],
 			"settings": {
-				"foreground": "#89DDFF"
+				"foreground": "#ffefe0"
 			}
 		},
 		{
@@ -86,7 +98,7 @@
 				"markup.deleted.git_gutter"
 			],
 			"settings": {
-				"foreground": "#f07178"
+				"foreground": "#ffefe0"
 			}
 		},
 		{
@@ -99,26 +111,26 @@
 				"keyword.other.special-method"
 			],
 			"settings": {
-				"foreground": "#82AAFF"
+				"foreground": "#98e6ff"
 			}
 		},
 		{
 			"name": "Block Level Variables",
 			"scope": [
-				"meta.block variable.other"
+				"meta.blockvariable.other"
 			],
 			"settings": {
-				"foreground": "#f07178"
+				"foreground": "#ffc184"
 			}
 		},
 		{
 			"name": "Other Variable, String Link",
 			"scope": [
 				"support.other.variable",
-				"string.other.link"
+				"string.other.link",
 			],
 			"settings": {
-				"foreground": "#f07178"
+				"foreground": "#58e6ff"
 			}
 		},
 		{
@@ -134,7 +146,7 @@
 				"keyword.other"
 			],
 			"settings": {
-				"foreground": "#F78C6C"
+				"foreground": "#cff3ff"
 			}
 		},
 		{
@@ -149,7 +161,7 @@
 				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
-				"foreground": "#C3E88D"
+				"foreground": "#ffb592"
 			}
 		},
 		{
@@ -165,7 +177,24 @@
 				"support.type.sys-types"
 			],
 			"settings": {
-				"foreground": "#FFCB6B"
+				"foreground": "#ffb265",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Namespace, Library Class, Deprecated",
+			"scope": [
+				"entity.name.type.namespace",
+				"support.type.property-name",
+				"support.constant",
+				"support.type.property-name.css",
+				"support.type.property-name.scss",
+				"support.type.property-name.less",
+				"support.type.property-name.sass",
+				"markup.deleted"
+			],
+			"settings": {
+				"foreground": "#ffccce"
 			}
 		},
 		{
@@ -435,7 +464,7 @@
 				"punctuation.definition.list_item.markdown"
 			],
 			"settings": {
-				"foreground": "#EEFFFF"
+				"foreground": "#ffe0c1"
 			}
 		},
 		{
@@ -593,7 +622,7 @@
 				"punctuation.section.class.end"
 			],
 			"settings": {
-				"foreground": "#EEFFFF"
+				"foreground": "#ffe0c1"
 			}
 		},
 		{
@@ -621,7 +650,7 @@
 				"markup.table"
 			],
 			"settings": {
-				"foreground": "#EEFFFF"
+				"foreground": "#ffe0c1"
 			}
 		}
 	]
