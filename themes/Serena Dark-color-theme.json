@@ -3,7 +3,9 @@
 	"colors": {
 		"editor.background": "#181f27",
 		"editor.foreground": "#fddfde",
-		"activityBarBadge.background": "#ffa345",
+		"activityBarBadge.background": "#FF5370",
+		"statusBar.background": "#77B5FE",
+		"statusBar.foreground": "#181f27",
 		"sideBarTitle.foreground": "#ffefe0"
 	},
 	"tokenColors": [
@@ -21,12 +23,11 @@
 		{
 			"name": "Variables",
 			"scope": [
-				"variable",
-				"entity.name.variable",
+				"entity.name.variable.field",
 				"string constant.other.placeholder"
 			],
 			"settings": {
-				"foreground": "#ffe0c1",
+				"foreground": "#ffb9cd",
 				"fontStyle": ""
 			}
 		},
@@ -37,6 +38,24 @@
 			],
 			"settings": {
 				"foreground": "#e100ff" // IDK
+			}
+		},
+		{
+			"name": "Keyword Classic",
+			"scope": [
+				"keyword.type.string",
+				"keyword.type.int",
+				"keyword.type.float",
+				"keyword.type.char",
+				"keyword.type.bool",
+				"keyword.type.void",
+				"keyword.type.number",
+				"keyword.type.object",
+				"keyword.type.array",
+			],
+			"settings": {
+				"foreground": "#77b5fe",
+				"fontStyle": ""
 			}
 		},
 		{
@@ -52,23 +71,35 @@
 		{
 			"name": "Keyword Type, Storage",
 			"scope": [
-				"keyword",
 				"storage.type",
 				"storage.modifier"
 			],
 			"settings": {
-				"foreground": "#d68121",
+				"foreground": "#8586f6",
 				"fontStyle": "italic bold"
 			}
 		},
 		{
 			"name": "Keyword Control",
 			"scope": [
-				"keyword.control"
+				"keyword.control.conditional",
+				"keyword.control.flow",
+				"keyword.control.loop",
+				"keyword.operator.expression",
 			],
 			"settings": {
-				"foreground": "#f19739",
+				"foreground": "#ff87ad",
 				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Source",
+			"scope": [
+				"keyword.other.directive",
+				"keyword.control.import"
+			],
+			"settings": {
+				"foreground": "#8586f6"
 			}
 		},
 		{
@@ -85,6 +116,15 @@
 				"punctuation.section.embedded",
 				"keyword.other.template",
 				"keyword.other.substitution"
+			],
+			"settings": {
+				"foreground": "#ffefe0"
+			}
+		},
+		{
+			"name": "Operator",
+			"scope": [
+				"keyword.operator"
 			],
 			"settings": {
 				"foreground": "#ffefe0"
@@ -143,7 +183,8 @@
 				"constant.escape",
 				"variable.parameter",
 				"keyword.other.unit",
-				"keyword.other"
+				"keyword.other",
+				"constant.other.caps"
 			],
 			"settings": {
 				"foreground": "#cff3ff"
@@ -158,33 +199,19 @@
 				"entity.other.inherited-class",
 				"markup.heading",
 				"markup.inserted.git_gutter",
+				"variable.other.object.property",
 				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
-				"foreground": "#ffb592"
+				"foreground": "#FFEFE0"
 			}
 		},
-		{
-			"name": "Class, Support",
-			"scope": [
-				"entity.name",
-				"support.type",
-				"support.class",
-				"support.other.namespace.use.php",
-				"meta.use.php",
-				"support.other.namespace.php",
-				"markup.changed.git_gutter",
-				"support.type.sys-types"
-			],
-			"settings": {
-				"foreground": "#ffb265",
-				"fontStyle": "italic"
-			}
-		},
+		
 		{
 			"name": "Namespace, Library Class, Deprecated",
 			"scope": [
 				"entity.name.type.namespace",
+				"entity.name.type.class",
 				"support.type.property-name",
 				"support.constant",
 				"support.type.property-name.css",
@@ -205,7 +232,7 @@
 			"settings": {
 				"foreground": "#B2CCD6"
 			}
-		},
+		}, 
 		{
 			"name": "CSS Class and Support",
 			"scope": [
@@ -652,6 +679,41 @@
 			"settings": {
 				"foreground": "#ffe0c1"
 			}
+		},
+		{
+			"name": "Enum Member",
+			"scope": [
+				"variable.other.enummember"
+			],
+			"settings": {
+				"foreground": "#FFCCCE",
+				"fontStyle": "italic underline"
+			}
+		},
+		{
+			"name": "Properties",
+			"scope": [
+				"variable.other.property",
+				"variable.other.object.property",
+				"variable.other.event",
+			],
+			"settings": {
+				"foreground": "#FFCCCE"
+			}
+		},
+		{
+			"name": "Constant Boolean",
+			"scope": [
+				"constant.language.boolean"
+			],
+			"settings": {
+				"foreground": "#FF5370",
+				"fontStyle": "bold"
+			}
 		}
-	]
+	],
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"variable.other.enummember": "#f07178"
+	}
 }
