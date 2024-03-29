@@ -17,7 +17,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#504747"
+				"foreground": "#7c6d6d"
 			}
 		},
 		{
@@ -27,7 +27,7 @@
 				"string constant.other.placeholder"
 			],
 			"settings": {
-				"foreground": "#ffb9cd",
+				"foreground": "#ff8cbd",
 				"fontStyle": ""
 			}
 		},
@@ -88,7 +88,7 @@
 				"keyword.operator.expression",
 			],
 			"settings": {
-				"foreground": "#ff87ad",
+				"foreground": "#da4c80",
 				"fontStyle": ""
 			}
 		},
@@ -686,8 +686,8 @@
 				"variable.other.enummember"
 			],
 			"settings": {
-				"foreground": "#FFCCCE",
-				"fontStyle": "italic underline"
+				"foreground": "#ff8cbd",
+				"fontStyle": "italic bold underline"
 			}
 		},
 		{

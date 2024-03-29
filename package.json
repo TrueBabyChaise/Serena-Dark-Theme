@@ -1,20 +1,27 @@
 {
-  "name": "serena-dark",
-  "displayName": "Serena Dark",
-  "description": "Dark Theme",
+  "name": "shade-of-love",
+  "displayName": "Shade Of Love",
+  "description": "Dark Theme, focusing on shades of red, pink and blue",
   "version": "0.0.1",
+  "publisher": "SerenaSatella",
+  "license": "MIT",
+  "icon": "src/serena_dark.jpg",
   "engines": {
-    "vscode": "^1.87.0"
+    "vscode": "^1.43.0"
   },
   "categories": [
     "Themes"
   ],
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/TrueBabyChaise/Serena-Dark-Theme"
+	},
   "contributes": {
     "themes": [
       {
         "label": "Serena Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/Serena Dark-color-theme.json"
+        "path": "./themes/dark-color-theme.json"
       }
     ]
   }
