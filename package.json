@@ -2,7 +2,7 @@
   "name": "shade-of-love",
   "displayName": "Shade Of Love",
   "description": "Dark Theme, focusing on shades of red, pink and blue",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "publisher": "SerenaSatella",
   "license": "MIT",
   "icon": "src/serena_dark.jpg",
@@ -19,7 +19,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "Serena Dark",
+        "label": "Shade Of Love",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-color-theme.json"
       }
