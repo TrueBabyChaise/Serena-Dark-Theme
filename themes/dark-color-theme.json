@@ -1,11 +1,51 @@
 {
 	"name": "Shade Of Love",
 	"colors": {
+
+		/// editor
 		"editor.background": "#181f27",
 		"editor.foreground": "#fddfde",
+
+		///GUTTER
+		"editorGutter.background": "#181f27",
+
+		/// SearchBar
+		"tab.activeBackground": "#FF5370",
+		"tab.inactiveBackground": "#181f27",
+		"tab.activeBorder": "#fddfde",
+		"tab.hoverBackground": "#fddfde",
+		"tab.hoverForeground": "#181f27",
+		"titleBar.border": "#FF5370",
+		"titleBar.activeBackground": "#181f27",
+		"titleBar.activeForeground": "#fddfde",
+
+	
+		//ActivityBar
+		"activityBar.background": "#181f27",
 		"activityBarBadge.background": "#FF5370",
+		//"actionBar.toggledBackground": "#ff0000",
+		"activityBar.foreground": "#FF5370",
+		"activityBar.inactiveForeground": "#FFEFE0",
+
+		"badge.background": "#FF5370",
+		"badge.foreground": "#FFEFE0",
+
+
+		///STATUS BAR
+
 		"statusBar.background": "#77B5FE",
+		"statusBar.debuggingBackground": "#FF5370",
+		"statusBar.noFolderBackground": "#77B5FE",
 		"statusBar.foreground": "#181f27",
+		"statusBar.debuggingForeground": "#ffefe0",
+		"statusBar.noFolderForeground": "#181f27",
+
+
+		///SIDE BAR
+		"sideBar.background": "#14191e",
+		"sideBarSectionHeader.foreground": "#ffefe0",
+		"sideBar.border": "#FF5370",
+		"sideBar.foreground": "#ffefe0",
 		"sideBarTitle.foreground": "#ffefe0"
 	},
 	"tokenColors": [
@@ -96,7 +136,8 @@
 			"name": "Source",
 			"scope": [
 				"keyword.other.directive",
-				"keyword.control.import"
+				"keyword.control.import",
+				"keyword.control.from"
 			],
 			"settings": {
 				"foreground": "#8586f6"
@@ -698,7 +739,7 @@
 				"variable.other.event",
 			],
 			"settings": {
-				"foreground": "#FFCCCE"
+				"foreground": "#f17e83"
 			}
 		},
 		{

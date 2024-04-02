@@ -6,6 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.0.4] - 2024-04-02
+
+### Added
+
+- Added colors for the activity bar, status bar, and side bar and title bar
+
+### Changed
+
+- Put property pink color a little bit darker, to make it more noticeable
+
+### Fixed
+
+- [JS] Fixed the color of "from" keyword to match the color of "import" keyword. ([Issue](https://github.com/TrueBabyChaise/Serena-Dark-Theme/issues/1))
+
 ## [0.0.3] - 2024-03-29
 
 ### Fixed
