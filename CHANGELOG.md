@@ -6,6 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.0.5] - 2024-04-03
+
+### Added
+
+- Added Basics colors for CSS, HTML, and JSON
+
+### Changed
+
+- The color when illegal statements are written in the code has been changed to a color that matches the theme
+
+### Fixed
+
+- Fixed the color of the active tab to make git colors more readable
+
 ## [0.0.4] - 2024-04-02
 
 ### Added
